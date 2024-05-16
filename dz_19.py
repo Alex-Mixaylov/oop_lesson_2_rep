@@ -27,11 +27,33 @@ class Animal():
         pass
     def animal_eat(self):
         pass
+
 class Bird(Animal):
     def __init__(self, name, age):
         super().__init__(name, age)
     def animal_sound(self):
-        return "Чирик-чирик"
+        return "Пение пиц"
     def animal_eat(self):
         return "Зерно"
-    
+    def animal_move(self):
+        return "Летает"
+
+class Mammal(Animal):
+    def __init__(self, name, age):
+        super().__init__(name, age)
+    def animal_sound(self):
+        return "Звуки млекопитающих"
+    def animal_eat(self):
+        return "Молоко"
+    def animal_move(self):
+        return "Бегает"
+
+class Reptile(Animal):
+    def __init__(self, name, age):
+        super().__init__(name, age)
+    def animal_sound(self):
+        return "Не издает звуков"
+    def animal_eat(self):
+        return "Насекомые"
+    def animal_move(self):
+        return "Ползает"
