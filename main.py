@@ -33,3 +33,20 @@ class School():
 my_teacher = Teacher()
 my_school = School(my_teacher)
 
+# Полиморфизм
+class Dog():
+    def sounds(self):
+        return "Woof!"
+
+class Cat():
+    def sounds(self):
+        return "Meow!"
+
+def animal_sounds(animal):
+    print(animal.sounds())
+
+my_dog = Dog()
+my_cat = Cat()
+
+animal_sounds(my_dog)
+animal_sounds(my_cat)
