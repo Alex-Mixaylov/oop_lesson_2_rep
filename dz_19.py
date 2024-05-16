@@ -67,13 +67,13 @@ def animal_sound(animals):
 # Должны быть методы для добавления животных и сотрудников в зоопарк.
 class Zoo:
     def __init__(self):
-        self.animals = []
-        self.employees = []
+        self.animals = [] # Композиция
+        self.employees = [] # Композиция
 
-    def add_animal(self, animal):
+    def add_animal(self, animal): # Композиция
         self.animals.append(animal)
 
-    def add_employee(self, employee):
+    def add_employee(self, employee): # Композиция
         self.employees.append(employee)
 
     def save_to_file(self, filename):
